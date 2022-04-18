@@ -1,0 +1,386 @@
+@font-face {
+    font-family: font1;
+    src: url(font/Cotoris.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(font/AlexBrush.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(font/BLKCHCRY.TTF);
+}
+@font-face {
+    font-family: sensifont;
+    src: url("font/Sensei.otf");
+}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+    margin: 0;
+}
+@font-face {
+    font-family: myf;
+    src: url("font/AlexBrush.ttf");
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background:#Fed95f;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 0px;
+
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.about .row .col50 h1{
+    font-family:font1;
+}
+div.text{
+    display: inline-block;
+    font-size: small;
+}
+div.welcome{
+    position: relative;
+    margin-right: 200px;
+    display: inline-block;
+}
+section{
+    padding: 100px;
+}
+section.about{
+    background: gainsboro;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+}
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section.recipes{
+    padding: 30px;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Times New Roman";
+}
+.recipes .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.recipes .content .box{
+    color: #6AA338;
+    width: 300px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.recipes .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.recipes .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recipes .content .box .text{
+    padding: 15px 0 5px;
+}
+.recipes .content .box .text h3{
+  font-size: 20px;
+}
+.container3 {
+    width: 70%;
+    margin: 2rem auto;
+}
+.card{
+    background-color: #fff;
+    box-shadow: 0 0 2.5rem rgba(0,0,0,0.28);
+    width: 800px;
+}
+.card-img{
+    height: 30rem;
+    overflow: hidden;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.card-content{
+    padding: 1rem;
+}
+@media screen and (min-width: 900px) {
+    .card{
+        margin-top: 40px;
+        display: flex;
+        height: 15rem;
+        overflow: hidden;
+    }
+    .card-img{
+        height:auto;
+        flex: 1;
+    }
+    .card-content {
+        flex: 2;
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content:center;
+    }
+}
+.card-content p a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    font-size:25px;
+}
+footer{
+    margin-top: 40px;
+    bottom: 0px;
+    width: 100%;
+    background: #A7D9AC;
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.main-content .box .content{
+  font-size: 18px;
+    font-family: "Times New Roman";
+}
+.box h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.box .content{
+    margin: 20px 0 0 0;
+}
+.left .content p{
+    text-align: justify;
+    font-size: 17px;
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 2px;
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    color: #A7D9AC;
+    background: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: rosybrown;
+}
+.center .content .text{
+    font-size: 19px;
+}
+.center .content span{
+    height: 30px;
+    width: 30px;
+}
+.right .content .msg{
+    padding-top: 10px;
+}
+.right .content .btn{
+    margin: 5px 5px 5px 5px;
+
+}
+.left h2{
+    font-family: font2;
+    font-size: 30px;
+}
+
+.shop .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.shop .content .box{
+    width: 200px;
+    margin: 15px;
+}
+.shop .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.shop .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.shop .content .box .text{
+    padding: 15px 0 5px;
+}
+.shop .content .box .text h3{
+   font-size: 20px;
+}
+
+.main-content .left box h2{
+    font-family:font2 ;
+}
+
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+.popup{
+    position: fixed;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #B1E073;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: "Times New Roman";
+}
+.popup.active{
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.popup .ing{
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family:"Times New Roman";
+    font-size: 15px;
+}
+.popup .ing h1{
+    font-family: sensifont;
+    font-size: large;
+}
+.popup .imgBx img{
+    float: right;
+    display: inline-block;
+}
+.popup .title{
+    font-size: 25px;
+    font-family:"Times New Roman";
+    align-items: center;
+    justify-content: center;
+}
+
+.popup .content .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background:#FABBB6;
+    color:#000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
